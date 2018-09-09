@@ -8,39 +8,45 @@ description: "Personal website of Rituraj Kaushik" # used by search engines
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type on Strap # blog's title
-  avatar: assets/img/triangle.svg
+  title: Rituraj Kaushik # blog's title
+  avatar: assets/img/pexels/passport_pic.jpg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+     <p> I am currently a doctoral researcher at INRIA - Nancy, France. 
+     <br> My broad area of research comes under Machine Learning and Robotics or simply "Robot Learning".
+     <br> I have been working on designing data-efficient algorithms for robots to learn controllers/policies using 
+     <br> trial-and-error based learning approach.
+     </p>
+  # header_text_feature_image: assets/img/pexels/triangular.jpeg
+  header_text_feature_image: assets/img/pexels/network.jpg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+     Connect with me
+  #  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
-  rss: true  # Make sure you created a feed.xml with feed.xml layout
-  email_address: # Full email address, e.g. "sam@example.com"
+  rss: false  # Make sure you created a feed.xml with feed.xml layout
+  email_address: rituraj.kaushik95@gmail.com # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "riturajkaushik"
   google_plus:
   instagram:
   keybase:
-  linkedin:  # Full URL
+  linkedin:  https://www.linkedin.com/in/rituraj-kaushik-43660b38/ # Full URL
   pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: # "twitter username"
+  twitter: RR_Kaushik # "twitter username"
   vimeo:
   wordpress:
   youtube:
