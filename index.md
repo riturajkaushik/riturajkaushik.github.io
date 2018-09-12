@@ -1,9 +1,6 @@
 ---
 layout: home
 ---
+## News
 
-## This is test
-* New paper accepted . Find it [here](www.allbal.com) 
-* Option
- - Bye
- - say
+* *Our paper has got accepted for CoRL 2018. [Read here](https://arxiv.org/pdf/1806.09351.pdf)*
