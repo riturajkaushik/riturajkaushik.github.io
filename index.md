@@ -1,6 +1,7 @@
 ---
 layout: home
 hide: true
+title: Rituraj Kaushik
 ---
 
 ## Updates
