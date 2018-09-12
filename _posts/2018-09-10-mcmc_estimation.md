@@ -13,7 +13,7 @@ How to get an estimate of the prediction uncertainty? One way to deal with this 
 One way to estimate the probability distribution $$P(w_0, w_1, w_2)$$ or simply $$P(W)$$ is Bayesian inference i.e using Bayes' rule. The Bayes' rule can be written as follows:
 
 $$ 
-P(W \mid D) = \frac{P(D \mid W)P(W)}{\int {P(D \mid W_i)dW_i}}
+P(W \mid D) = \frac{P(D \mid W)P(W)}{\int {P(D \mid W_i)P(W_i)dW_i}}
 $$
 
 where, $$W$$ is the vector of coefficients of out quadratic model and $$D$$ represents the given data.
@@ -24,7 +24,7 @@ $$P(W \mid D)$$ : Probability distribution of $$W$$ given the data $$D$$ (i.e. t
 
 $$P(D \mid W)$$ : This is called **likelihood** of the given data with some $$W$$. This can be calculated form our model i.e the quadratic model. We'll see it later how to do that.
 
-$$\int {P(D \mid W_i)dW_i}$$ : This is called the **marginal** distribution over the data. i.e the distribution of (x,y) pairs for all the possible values of $$W$$ using our quadratic model. And this is the most problematic term in Bayes' rule. For a complex model (such as neural networks) with continuos $$W$$ it is very hard to compute this integral in closed form. And thus in those cases we cannot apply Bayes's rule as it is and we need to approximate the **posterior** distribution from whatever portion of the formula is computable. One such approximation method is MCMC.
+$$\int {P(D \mid W_i)P(W_i)dW_i}$$ : This is called the **marginal** distribution over the data. i.e the distribution of (x,y) pairs for all the possible values of $$W$$ using our quadratic model. And this is the most problematic term in Bayes' rule. For a complex model (such as neural networks) with continuos $$W$$ it is very hard to compute this integral in closed form. And thus in those cases we cannot apply Bayes's rule as it is and we need to approximate the **posterior** distribution from whatever portion of the formula is computable. One such approximation method is MCMC.
 
 ## Now let's jump into MCMC
 
