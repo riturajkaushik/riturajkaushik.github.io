@@ -16,7 +16,9 @@ layout: default
       {% if page.bootstrap %}
       <div class="bootstrap-iso">
       {% endif %}
+      <div align="justify">
       {{ content }}
+      </div>
       {% if page.bootstrap %}
       </div>
       {% endif %}
@@ -24,7 +26,7 @@ layout: default
 </article> 
 
 <div class="home">
-  <div class="posts">
+  <div class="posts" align="justify">
     {% for post in site.posts %}
     <div class="post-teaser">
       {% if post.thumbnail %} 
