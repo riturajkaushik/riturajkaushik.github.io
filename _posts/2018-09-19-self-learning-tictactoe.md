@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A self learning Tic-Tac-Toe game agent
+title: How to train matchboxes to play human level tic-tac-toe
 tags: [artificial intelligence, reinforcement learning, trial-and-error learning, python]
 ---
 
