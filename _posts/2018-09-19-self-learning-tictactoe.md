@@ -3,13 +3,6 @@ layout: post
 title: A self learning Tic-Tac-Toe game agent
 tags: [artificial intelligence, reinforcement learning, trial-and-error learning, python]
 ---
-<style>
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
 
 Wouldn't be it amazing if machines could be able to think like us and learn some stuff like cooking, playing some sports, responding to phone calls all by themselves? Well we are actually heading in that direction currently and future is probably not that far. This particular field of research comes under the umbrella of Reinforcement Learning (RL). RL is amazing because using this approach we can actually program some self learning behaviors into machines and let them learn anything by trying and gaining experience. In this article to give an idea about how we can program such "self learning machines", I am going to explain the basic steps of a **self learning tic-tac-toe game agent** that learns how to play the game by playing thousands of games with itself. We are going to code everything in Python programming language without using any special library.
 
@@ -22,6 +15,14 @@ So, the approach that I am going to explain is based on something called **MENAC
 * For each configuration of the tic-tac-toe game, we have to have a match box. The number of match box required can be very large as number of possible "game states" is a large number ($$3^9 = 19683$$). However, this number can significantly reduce this number if we apply the fact that some game states will never appear if the winning state comes before that and some game states we dont have to count (i.e when the board is fully covered). To read more about this state reduction you can refer to this site: [brianshourd.com](http://brianshourd.com/posts/2012-11-06-tilt-number-of-tic-tac-toe-boards.html). 
 
 <!-- ![config and match boxes]({{ site.url }}/assets/img/posts/tictac_match.png){:height="70%" width="70%"} -->
+
+<style>
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
 
 <div class="center" style="width:600px">
 <img src="/assets/img/posts/tictac_match.png" alt="config and match boxes" style="max-width: 100%;"/>
