@@ -4,7 +4,7 @@ title: How to train matchboxes to play human level tic-tac-toe
 tags: [artificial intelligence, reinforcement learning, trial-and-error learning, python]
 ---
 
-Wouldn't be it amazing if machines could be able to think like us and learn some stuff like cooking, playing some sports, responding to phone calls all by themselves? Well we are actually heading in that direction currently and future is probably not that far. This particular field of research comes under the umbrella of Reinforcement Learning (RL). RL is amazing because using this approach we can actually program some self learning behaviors into machines and let them learn anything by trying and gaining experience. In this article to give an idea about how we can program such "self learning machines", I am going to explain the basic steps of a **self learning tic-tac-toe game agent** that learns how to play the game by playing thousands of games with itself. We are going to code everything in Python programming language without using any special library.
+Wouldn't be it amazing if machines could be able to think like us and learn some stuff like cooking, playing some sports, responding to phone calls all by themselves? Well we are actually heading in that direction and future is probably not that far. This particular field of research comes under the umbrella of Reinforcement Learning (RL). RL is amazing because using this approach we can actually program some self learning behaviors into machines and let them learn anything by trying and gaining experience. In this article to give an idea about how we can program such "self learning machines", I am going to explain how we can train some matchboxes to play Tic-tac-toe with human level performance just by playing a few games with them. Moreover, we will extend this idea further and write a tic-tac-toe program in python that learns how to play the game by playing thousands of games with itself within a few seconds.
 
 ### Matchbox Educable Naughts and Crosses Engine: MENACE
 
@@ -12,7 +12,7 @@ So, the approach that I am going to explain is based on something called **MENAC
 
 ### Setting up everything
 
-* For each configuration of the tic-tac-toe game, we have to have a match box. The number of match box required can be very large as number of possible "game states" is a large number ($$3^9 = 19683$$). However, this number can significantly reduce this number if we apply the fact that some game states will never appear if the winning state comes before that and some game states we dont have to count (i.e when the board is fully covered). To read more about this state reduction you can refer to this site: [brianshourd.com](http://brianshourd.com/posts/2012-11-06-tilt-number-of-tic-tac-toe-boards.html). 
+* For each configuration of the tic-tac-toe game, we have to have a matchbox. The number of match box required can be very large as the number of possible "game states" is a large number ($$3^9 = 19683$$). However, this number can be reduce this if we apply the fact that some game states will never appear if the winning state comes before that and some game states we dont have to count (i.e when the board is fully covered). To read more about this state reduction you can refer to this article: [brianshourd.com](http://brianshourd.com/posts/2012-11-06-tilt-number-of-tic-tac-toe-boards.html). 
 
 <!-- ![config and match boxes]({{ site.url }}/assets/img/posts/tictac_match.png){:height="70%" width="70%"} -->
 
@@ -38,26 +38,26 @@ So, the approach that I am going to explain is based on something called **MENAC
 
 Assuming that the matchboxes will play first, the game play and updating of the beads will be done as follows:
 
-1. We will pick the matchbox corresponding to the initial state of the game (i.e matchbox corresponds to the empty board). Then we randomly pick a bead from the matchbox. According to the color of the bead, we will place a *cross* in the corresponding box of the board. And thus matchbox has played its turn. We will keep that matchbox aside and write down in a paper which color we had picked from that matchbox. 
+1. We will pick the matchbox corresponding to the initial state of the game (i.e matchbox corresponds to the empty board). Then we will randomly pick a bead from the matchbox. According to the color of the bead, we will place a *cross* in the corresponding box of the board. And thus matchbox has played its turn. We will keep that matchbox aside and write down in a paper which color we has picked from that matchbox. 
 
-2. Now its your turn now. You place your *zero* wherever you want.
+2. Now its your turn. You place your *zero* wherever you want.
 
-3. Now it's matchboxes turn. Again pick the matchbox corresponding to the board configuration. Open it and randomly pick a bead. Put a *cross* on the board according to the color of the bead. Note down the color you picked from that matchbox and keep the matchbox aside.
+3. Now it's matchboxes turn again. Again pick the matchbox corresponding to the board configuration. Open it and randomly pick a bead. Put a *cross* on the board according to the color of the bead. Note down the color you picked from that matchbox and keep the matchbox aside.
 
 4. Repeat this process again from step 2 until the game ends.
 
 5.    
-    * If the you win: We have to remove one bead from each of the matchboxes we just used. The color of the beads should be same as the one we picked from that matchbox in that particular game. We just punished the matchboxes.
+    * If you win: We have to remove one bead from each of the matchboxes we just used. The color of the beads should be same as the one we picked from that matchbox in that particular game. We punish the matchboxes that way for losing the game.
 
-    * If matchboxes win: We have to add one beads to each of the matchboxes we just used. The color of the beads should be same as the one we picked from that matchbox in that particular game. We just awarded them for winning!!
+    * If matchboxes win: We have to add one bead to each of the matchboxes we just used. The color of the beads should be same as the one we picked from that matchbox in that particular game. We reward them this way for winning!!
 
     * If the game is draw (tie) : No need to do anything.
 
-And thus one iteration of the training process ends. Our matchboxes are now a bit smarter then before. We have to repeat the process again and again till on the winning rate of the match boxes reaches a desired level.
+And with this one iteration of the training process ends. Our matchboxes are now a bit smarter then before. We have to repeat the process again and again till on the winning rate of the match boxes reaches a desired level.
 
 ### Why it works
 
-I think if you have read the article to this point then you have probably understood why matchboxes will eventually start winning or drawing the games. You you didn't get it then also it's absolutely fine. Because I am going to explain it anyway. Initially there will be very low probability that the matchboxes will win a game against you. This is because there will be more or less equal probability of picking a bead of specific color from the matchboxes. Because the number of beads corresponding to each color is same. As a result, it will be similar to playing random *crosses* against you. Now once you start adding beads whenever matchboxes win, the probability of picking those beads will be higher from those specific matchboxes. In simple words, chances of selecting *winning moves* from the matchboxes will be more now. Same is the case when matchboxes lose a game. We remove the beads we picked in that game from the matchboxes. This way probability of picking the beads of those colors (*losing moves*) from those specific matchboxes will be reduced. If we continue the process several times the matchboxes will have more winning and drawing beads then the losing beads. And thus they will start either winning or drawing the game.
+I think if you have read the article to this point then you have probably understood why matchboxes will eventually start winning or drawing the games. If you didn't get it then also it's absolutely fine. Because I am going to explain it anyway. Initially there will be very low probability that the matchboxes will win a game against you. This is because there will be more or less equal probability of picking a bead of specific color from the matchboxes. Because the number of beads corresponding to each color is same. As a result, it will be similar to playing random *crosses* against you at the beginning. Now once you start adding beads whenever matchboxes win, the probability of picking those beads will be higher from those specific matchboxes. In simple words, chances of selecting *winning moves* from the matchboxes will be more now. Same is the case when matchboxes lose a game; we remove the beads we picked in that game from the matchboxes. This way probability of picking the beads of those colors (*losing moves*) from those specific matchboxes will be reduced. If we continue the process several times the matchboxes will have more winning and drawing beads then the losing beads. And thus they will start either winning or drawing the game.
 
 ### Did anyone actually try this with matchboxes?
 
@@ -66,19 +66,19 @@ Yes. You can check this video:
 
 ### Let's implement the strategy in python
 
-Couple of years back I implemented this strategy in python when I did not really know about reinforcement learning. Instead of matchboxes I used *lists*. At first, I generated all the states and stored them in a python list. Corresponding to each state also stored a list of number between 0 to 8. Let's call it states-moves list. These numbers are our "beads" or "moves" corresponding to the states. Then I wrote a loop to implement the self-play between two game agents so that thousands of game can be played within a few seconds. However, both the game agents uses the same "states-moves" list and updates it according to the strategy discussed above. And voila!! it did not work. But why? 
+Couple of years back I implemented this strategy in python when I did not really know about reinforcement learning. Instead of matchboxes I used *lists*. At first, I generated all the states and stored them in a python list. Corresponding to each state also stored a list of number between 0 to 8. Let's call it states-moves list. These numbers are our "beads" or "moves" corresponding to the states. Then I wrote a loop to implement the self-play between two game agents so that thousands of game can be played within a few seconds. However, both the game agents use the same "states-moves" list and update it according to the strategy discussed above. And voila!! it did not work. But why? 
 
-* Firstly, the number of states I generated was too high. That slowed down the state search loops in the program. I resolve this issue by removing duplicate state using the fact that the board is symmetric. And this made the program super fast.
+* Firstly, the number of states I generated was too high. That slowed down the state search loops in the program. I resolved this issue by removing duplicate states using the fact that the board is symmetric. And this made the program super fast.
 
-* There was no "reward" to winning the game in smallest number of moves. And since both the agents were updating the same "states-moves" list it is actually slightly tricky to come out of self-reinforcing bad behaviors (like winning towards the end of the game even if there are chances of winning the game before). In fact, since we pick the beads randomly, it is less likely to select a winning move when are other possible moves available. To give a push to select moves such that the game ends as quickly as possible, I added a rew reward. I add more winning moves for the winning agent if the game length is short. On the other hand, for the losing agent, I remove more corresponding moves if the game length is short. 
+* There was no "reward" to winning the game in smallest number of moves. And since both the agents were updating the same "states-moves" list. It is actually slightly tricky to come out of self-reinforcing bad behaviors (like winning towards the end of the game even if there are chances of winning the game before). In fact, since we pick the beads randomly, it is less likely to select a winning move when there are other possible moves available. To give a push to select moves such that the game ends as quickly as possible, I added a new reward. I add more winning moves for the winning agent if the game length is short. On the other hand, for the losing agent, I remove more corresponding moves if the game length is short. 
 
-And again voila!! It worked perfectly this time. The program stores the final "states-moves" list in a file called **experience.dat**. Whenever it has to play with human it just load the list from the file and play moves by sampling moves from the list.
+And again voila!! It worked perfectly this time. The program stores the final "states-moves" list in a file called **experience.dat**. Whenever it has to play with human it just loads the list from the file and play moves by sampling moves from the list.
 
 <div class="center" style="width:600px">
 <img src="/assets/img/posts/gameplay.png" alt="beads and board image" style="max-width: 100%;"/>
 </div>
 
-You can copy the following code and run it in python. It will first train the system with self-play and then start the human play session and wait for your input. Both the code and a trained experience.dat file can be found in my ![github repo](https://github.com/riturajkaushik/self-learning-tic-tac-toe). 
+You can copy the following code and run it in python by yourself. It will first train itself with self-play and then start the human play session and wait for your input. Both the code and a trained experience.dat file can be found in my ![github repository](https://github.com/riturajkaushik/self-learning-tic-tac-toe). 
 
 ```python
 
