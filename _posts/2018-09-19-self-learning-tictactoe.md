@@ -80,7 +80,7 @@ And again voila!! It worked perfectly this time. The program stores the final "s
 <img src="/assets/img/posts/gameplay.png" alt="beads and board image" style="max-width: 100%;"/>
 </div>
 
-You can copy the following code and run it in python by yourself. It will first train itself with self-play and then start the human play session and wait for your input. Both the code and a trained experience.dat file can be found in my ![github repository](https://github.com/riturajkaushik/self-learning-tic-tac-toe). 
+You can copy the following code and run it in python by yourself. It will first train itself with self-play and then start the human play session and wait for your input. Both the code and a trained experience.dat file can be found in my [github repository](https://github.com/riturajkaushik/self-learning-tic-tac-toe). 
 
 ```python
 
