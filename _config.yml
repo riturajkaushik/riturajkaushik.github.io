@@ -9,7 +9,8 @@ description: "Personal website of Rituraj Kaushik" # used by search engines
 theme_settings:
   # Meta
   title: Rituraj Kaushik # blog's title
-  avatar: assets/img/pexels/passport_pic.jpg
+  # avatar: assets/img/pexels/passport_pic.jpg
+  avatar: assets/img/pexels/avatar_0.jpeg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
