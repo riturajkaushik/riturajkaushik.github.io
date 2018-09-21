@@ -1,6 +1,8 @@
 ---
 layout: post
 title: How to train matchboxes to play human level tic-tac-toe
+feature-img: "assets/img/posts/ai_touch.jpg"              # Add a feature-image to the post
+thumbnail: "assets/img/posts/ai_touch.jpg"   # Add a thumbnail image on blog view
 tags: [artificial intelligence, reinforcement learning, trial-and-error learning, python]
 ---
 
@@ -12,7 +14,7 @@ So, the approach that I am going to explain is based on something called **MENAC
 
 ### Setting up everything
 
-* For each configuration of the tic-tac-toe game, we have to have a matchbox. The number of match box required can be very large as the number of possible "game states" is a large number ($$3^9 = 19683$$). However, this number can be reduce this if we apply the fact that some game states will never appear if the winning state comes before that and some game states we dont have to count (i.e when the board is fully covered). To read more about this state reduction you can refer to this article: [brianshourd.com](http://brianshourd.com/posts/2012-11-06-tilt-number-of-tic-tac-toe-boards.html). 
+* For each configuration of the tic-tac-toe game, we have to have a matchbox. The number of match box required can be very large as the number of possible "game states" is a large number ($$3^9 = 19683$$). However, this number can be reduced this if we apply the fact that some game states will never appear if the winning state comes before that and some game states we dont have to count (i.e when the board is fully covered). To read more about this state reduction you can refer to this article: [brianshourd.com](http://brianshourd.com/posts/2012-11-06-tilt-number-of-tic-tac-toe-boards.html). 
 
 <!-- ![config and match boxes]({{ site.url }}/assets/img/posts/tictac_match.png){:height="70%" width="70%"} -->
 
