@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yay! Got our paper accepted in CoRL 2018
+title: Yay! Our paper got accepted in CoRL 2018
 tags: [conference, paper]
 ---
 
