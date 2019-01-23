@@ -47,6 +47,9 @@ layout: default
           </header>
           <div class="excerpt">
               {{ post.excerpt | strip_html | escape }}
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                [Read more]
+              </a>
             <!--{{ post.content | strip_html | truncate: "250" }}-->
             <!--<a class="button" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}
