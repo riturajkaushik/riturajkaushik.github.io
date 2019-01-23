@@ -4,8 +4,9 @@ title: I started my youtube channel
 feature-img: "assets/img/posts/youtube.png" # Add a feature-image to the post
 thumbnail: "assets/img/posts/youtube.png"   # Add a thumbnail image on blog view
 tags: [artificial intelligence, reinforcement learning, youtube]
+excerpt_separator: <!--more-->
 ---
-There is a famous saying **"The best time to work on your plan was last year and the second best moment is NOW"**. Yes ! Finally I grabbed the 2nd best moment to work on my long procrastinated plan to start an educational youtube channel about artificial intelligence, Machine learning and reinforcement learning. 
+There is a famous saying **"The best time to work on your plan was last year and the second best moment is NOW"**. Yes ! Finally I grabbed the 2nd best moment to work on my long procrastinated plan to start an educational youtube channel about artificial intelligence, Machine learning and reinforcement learning. <!--more-->
 
 Here is the link to my newly created channel : [AI Talks - Rituraj Kaushik](https://www.youtube.com/channel/UCwrblBV2g0m8SuG8jQbhjuA/videos?view_as=subscriber) 
 
