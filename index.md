@@ -12,10 +12,22 @@ title: Rituraj Kaushik
 
 	- **C++ codes for Multi-Dex** : [Link to github](https://github.com/resibots/kaushik_2018_multi-dex)
 
-## Youtube channel **[AI Talks - Rituraj Kaushik](https://www.youtube.com/channel/UCwrblBV2g0m8SuG8jQbhjuA/videos?view_as=subscriber)**
+## Youtube channel : **[AI Talks - Rituraj Kaushik](https://www.youtube.com/channel/UCwrblBV2g0m8SuG8jQbhjuA/videos?view_as=subscriber)**
 
-Latest video : Multi-armed bandit problem 
+Latest video : Multi-armed bandits - action value estimation (sationary/non-stationary problems)
+
+<center>
+<iframe width="790" height="300" src="https://www.youtube.com/embed/ojjzpDrUppI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+Previous video : Multi-armed bandit problem 
 
 <center>
 <iframe width="790" height="300" src="https://www.youtube.com/embed/_XsIv-35c6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+About myself and my research:
+
+<center>
+<iframe width="790" height="300" src="https://www.youtube.com/embed/MO2qCKzR3F8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
