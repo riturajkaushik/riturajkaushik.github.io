@@ -13,10 +13,11 @@ I am currently a doctoral researcher (3rd year PhD candidate) at [INRIA - Nancy,
 ## Publications
 
 * **Year 2019**
-    - Kaushik, R., Desreumaux, K., & Mouret, J.-B. (2019), [Adaptive Prior Selection for Repertoire-based Online Learning in Robotics](https://arxiv.org/abs/1907.07029){:target="_blank"}. Preprint.
+    - Kaushik, R., Desreumaux, K., & Mouret, J.-B. (2019), [Adaptive Prior Selection for Repertoire-based Online Learning in Robotics](https://arxiv.org/abs/1907.07029){:target="_blank"}. **Frontiers in Robotics & AI**. 
 
 * **Year 2018**
     - Kaushik, R., Chatzilygeroudis, K., & Mouret, J.-B. (2018), [Multi-objective Model-based Policy Search for Data-efficient Learning with Sparse Rewards](https://arxiv.org/abs/1806.09351){:target="_blank"}. Conference on Robot Learning (**CoRL**)
+
 * **Year 2017**
     - Chatzilygeroudis, K., Rama, R., Kaushik, R., Goepp, D., Vassiliades, V., & Mouret, J.-B. (2017). [Black-Box Data-efficient Policy Search for Robotics](https://arxiv.org/abs/1703.07261){:target="_blank"}. Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**).
 
