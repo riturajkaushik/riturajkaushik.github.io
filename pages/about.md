@@ -12,6 +12,9 @@ I am currently a doctoral researcher (3rd year PhD candidate) at [INRIA - Nancy,
 
 ## Publications
 
+* **Year 2020**
+    - Kaushik, R., Anne, T. & Mouret, J.-B. (2020), [Fast Online Adaptation in Robotics through Meta-Learning Embeddings of Simulated Priors](https://arxiv.org/pdf/2003.04663.pdf){:target="_blank"}. Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**) (Accepted).
+
 * **Year 2019**
     - Kaushik, R., Desreumaux, K., & Mouret, J.-B. (2019), [Adaptive Prior Selection for Repertoire-based Online Learning in Robotics](https://arxiv.org/abs/1907.07029){:target="_blank"}. **Frontiers in Robotics & AI**. 
 
@@ -25,7 +28,7 @@ I am currently a doctoral researcher (3rd year PhD candidate) at [INRIA - Nancy,
  - **PhD (since October 2016)**: 
     * University de Lorraine/ INRIA - Nancy, France.
     * Supervisor: [Dr. Jean-Baptiste Mouret](https://members.loria.fr/JBMouret/)
-    * Topic: Trial-and-error learning for damage recovery in robotics
+    * Topic: Data-Efficient Robot Learning using Priors from Simulators
  - **M.Tech (2016)**: 
     * Electronics Design and Technology 
     * Tezpur University, India 
