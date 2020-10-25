@@ -32,6 +32,18 @@ A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chan
 ## Usage
 
 1. Fork and clone the [Type on Strap repo](https://github.com/sylhare/Type-On-Strap): `git clone https://github.com/Sylhare/Type-on-Strap.git`
+
+#####Note
+```
+Proper installation of ruby and bundler:
+
+  - Install rvm (Ruby Vesion Manager)
+  - Install ruby using rvm
+  - Remove all jekyll versions if multiple versions are installed
+
+Then follow the steps below:
+```
+
 2. Install [Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`, check [#1](https://github.com/Sylhare/Type-on-Strap/issues/1) if you have a problem.
 3. Install the theme's dependencies: `bundle install`
 4. Customize the theme
