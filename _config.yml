@@ -10,18 +10,18 @@ theme_settings:
   # Meta
   title: Rituraj Kaushik # blog's title
   # avatar: assets/img/pexels/passport_pic.jpg
-  avatar: assets/img/pexels/avatar_0.jpeg
+  avatar: assets/img/pexels/avatar_1.jpg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p> <b style="color:yellow;">I am currently</b> a postdoctoral researcher with Intelligent Robotics Research Group at Aalto University, Finland. 
+     <p> <b style="color:#ffff99;">I am currently</b> a postdoctoral researcher with Intelligent Robotics Research Group at Aalto University, Finland. 
      <br>
-     <br> <b style="color:yellow;">My broad area of research</b> comes under Machine Learning and Robotics, or simply "Robot Learning".
+     <br> <b style="color:#ffff99;">My broad area of research</b> comes under Machine Learning and Robotics, or simply "Robot Learning".
      <br> I work on fast and data-efficient learning algorithms for adaptive robots.
      <br>
-     <br> <b style="color:yellow;">I am passionate about</b> application of reinforcement learning, evolutionary computation and machine learning approaches on real physical systems.
+     <br> <b style="color:#ffff99;">I am passionate about</b> application of reinforcement learning, evolutionary computation and machine learning approaches on real physical systems.
      </p>
   # header_text_feature_image: assets/img/pexels/triangular.jpeg
   header_text_feature_image: assets/img/pexels/network.jpg
