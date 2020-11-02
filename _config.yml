@@ -16,10 +16,12 @@ theme_settings:
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p> I am currently a doctoral researcher at INRIA - Nancy, France. 
-     <br> My broad area of research comes under Machine Learning and Robotics or simply "Robot Learning".
-     <br> I have been working on designing data-efficient algorithms for robots to learn controllers/policies using 
-     <br> trial-and-error based learning approach.
+     <p> <b style="color:yellow;">I am currently</b> a postdoctoral researcher with Intelligent Robotics Research Group at Aalto University, Finland. 
+     <br>
+     <br> <b style="color:yellow;">My broad area of research</b> comes under Machine Learning and Robotics, or simply "Robot Learning".
+     <br> I work on fast and data-efficient learning algorithms for adaptive robots.
+     <br>
+     <br> <b style="color:yellow;">I am passionate about</b> application of reinforcement learning, evolutionary computation and machine learning approaches on real physical systems.
      </p>
   # header_text_feature_image: assets/img/pexels/triangular.jpeg
   header_text_feature_image: assets/img/pexels/network.jpg
